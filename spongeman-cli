@@ -68,12 +68,12 @@ def Play(DirectLink):
     
     
 @Halo(text="Downloading episode.", spinner="shark", color="green")
-def Download(source):
+def Download(source, outputLocation=None):
     try:
-        subprocess.run(["youtube-dlc", source],
+        subprocess.run(["youtube-dlc", source, "-o", "" if outputLocation == None else outputLocation],
                 stdout=subprocess.DEVNULL,
                 stderr=subprocess.STDOUT)
-         
+
         print(colored("\nDownload complete!", "green"))
     
     except ImportError or subprocess.CalledProcessError:
@@ -109,6 +109,11 @@ try:
 except:
     pass
 
+try:
+    args3 = sys.argv[3]
+except:
+    args3 = None
+
 
 # Download Function
 try:
@@ -116,7 +121,7 @@ try:
         try:
             args2 = int(args2)
             print(f"Downloading episode {colored(args2, 'cyan')}")
-            Download(VideoSource(episodes[args2 - 1]))
+            Download(VideoSource(episodes[args2 - 1]), args3)
 
         except IndexError or ValueError:
             print(colored("No arguments passed with download function or the index is out of range, aborting...!", "red"))
