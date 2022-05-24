@@ -1,4 +1,7 @@
-# spongebob-cli
+# spongeman-cli
+![Bin Chiling Sponge Man](./spongeman.jpg);
+
+## DISCLAIMER: This is a fork of [trakban/spongebob-cli](https://github.com/trakBan/spongebob-cli) which uses youtube-dlc instead of youtube-dl for downloading the episodes (I might add more changes but for now that's all)
 Watch classic spongebob from the terminal!
 Thanks to everyone that is starring, forking, writing issues, pull requesting and just users of spongebob-cli!
 
@@ -23,7 +26,7 @@ sudo python setup.py install
 
 One line: 
 ```bash
-git clone https://github.com/trakBan/spongebob-cli.git; cd spongebob-cli; chmod +x spongebob-cli; sudo python setup.py install
+git clone https://github.com/dlanaras/spongeman-cli.git; cd spongeman-cli; chmod +x spongeman-cli; sudo python setup.py install
 ```
 
 ## Usage
@@ -38,21 +41,6 @@ git clone https://github.com/trakBan/spongebob-cli.git; cd spongebob-cli; chmod 
  --random | -r, usage spongebob-cli --random, This will play a random episode.
  --help | -h      usage --help this will print what each argument does.
 ```
-
-## Arch and Arch-based distributions
-There is an [AUR](https://aur.archlinux.org/packages/spongebob-cli-git/) package for spongebob-cli mantained by [getchoo](https://github.com/getchoo)
-
-```
-yay -S spongebob-cli-git
-```
-## Windows
-You need to install mpv through a windows package manager
-
-## Package Status
-[![Packaging status](https://repology.org/badge/vertical-allrepos/spongebob-cli.svg)](https://repology.org/project/spongebob-cli/versions)
-
-## Episodes that are known to not work
-- Episode 30, - Episode 129
 
 ## Troubleshooting
 
@@ -85,4 +73,5 @@ git clone https://github.com/trakBan/spongebob-cli.git; cd spongebob-cli; chmod 
 [redouane](https://github.com/red-elka), 
 [totensee](https://github.com/totensee), 
 [Kat](https://github.com/TransKat), 
-[dev-nolant](https://github.com/dev-nolant)
+[dev-nolant](https://github.com/dev-nolant),
+ and for this fork ;) : [dlanaras](https://github.com/dlanaras)

@@ -10,7 +10,7 @@ try:
     from prettytable import PrettyTable
     from urllib.error import HTTPError
     from halo import Halo
-   
+
     # local file, func.py
     from func import httperror_assess
     
@@ -120,6 +120,9 @@ try:
 
         except IndexError or ValueError:
             print(colored("No arguments passed with download function or the index is out of range, aborting...!", "red"))
+    
+    elif args.replace(" ", "") in ["--cheese", "-c"]:
+        print(colored(f"Here have some cheese: 🧀", "yellow"))
 
     # Dowload all
     elif args.replace(' ', '') in ["--download-all", "-da"]:

@@ -1,11 +1,12 @@
 from setuptools import setup
 
 setup(
-   name='spongebob-cli',
+   name='spongeman-cli',
    version='1.1',
-   install_requires=["termcolor", "BeautifulSoup4", "prettytable", "youtube-dl", "halo", "requests"], 
-   scripts=[
-            'spongebob-cli',
-            'func.py',
-           ]
+   install_requires=["termcolor", "BeautifulSoup4", "prettytable", "youtube-dlc", "halo", "requests"], 
+   scripts=
+   [
+      'spongeman-cli',
+      'func.py'
+   ]
 )
